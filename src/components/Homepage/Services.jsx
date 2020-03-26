@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import { FaWallet } from "react-icons/fa"
 import { Container, Row, Col } from "reactstrap"
-import ReactWOW from "react-wow"
 
 import ServicesShapeBg from "../../images/services-shape.svg"
 import ServicesShape1 from "../../images/services-shape-1.svg"
@@ -27,64 +26,70 @@ const Services = () => {
         </Row>
         <Row className="justify-content-center">
           <Col lg={4} md={7} sm={8}>
-            <ReactWOW animation="fadeIn" duration="1s" delay=".2s">
-              <div className="single-services text-center mt-30">
-                <div className="services-icon">
-                  <img className="shape" src={ServicesShapeBg} alt="shape" />
-                  <img className="shape-1" src={ServicesShape1} alt="shape" />
-                  <FaWallet />
-                </div>
-                <div className="services-content mt-30">
-                  <h4 className="services-title">
-                    <Link to="/">Cost Effectiveness</Link>
-                  </h4>
-                  <p className="text">
-                    Entering any country / corridor with very low operating
-                    capital (no pre-funding)
-                  </p>
-                </div>
+            <div
+              className="single-services text-center mt-30 wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay=".2s"
+            >
+              <div className="services-icon">
+                <img className="shape" src={ServicesShapeBg} alt="shape" />
+                <img className="shape-1" src={ServicesShape1} alt="shape" />
+                <FaWallet />
               </div>
-            </ReactWOW>
+              <div className="services-content mt-30">
+                <h4 className="services-title">
+                  <Link to="/">Cost Effectiveness</Link>
+                </h4>
+                <p className="text">
+                  Entering any country / corridor with very low operating
+                  capital (no pre-funding)
+                </p>
+              </div>
+            </div>
           </Col>
           <Col lg={4} md={7} sm={8}>
-            <ReactWOW animation="fadeIn" duration="1s" delay=".2s">
-              <div className="single-services text-center mt-30">
-                <div className="services-icon">
-                  <img className="shape" src={ServicesShapeBg} alt="shape" />
-                  <img className="shape-1" src={ServicesShape1} alt="shape" />
-                  <FaWallet />
-                </div>
-                <div className="services-content mt-30">
-                  <h4 className="services-title">
-                    <Link to="/">Cost Effectiveness</Link>
-                  </h4>
-                  <p className="text">
-                    Entering any country / corridor with very low operating
-                    capital (no pre-funding)
-                  </p>
-                </div>
+            <div
+              className="single-services wow fadeIn text-center mt-30"
+              data-wow-duration="1s"
+              data-wow-delay=".2s"
+            >
+              <div className="services-icon">
+                <img className="shape" src={ServicesShapeBg} alt="shape" />
+                <img className="shape-1" src={ServicesShape1} alt="shape" />
+                <FaWallet />
               </div>
-            </ReactWOW>
+              <div className="services-content mt-30">
+                <h4 className="services-title">
+                  <Link to="/">Cost Effectiveness</Link>
+                </h4>
+                <p className="text">
+                  Entering any country / corridor with very low operating
+                  capital (no pre-funding)
+                </p>
+              </div>
+            </div>
           </Col>
           <Col lg={4} md={7} sm={8}>
-            <ReactWOW animation="fadeIn" duration="1s" delay=".2s">
-              <div className="single-services text-center mt-30">
-                <div className="services-icon">
-                  <img className="shape" src={ServicesShapeBg} alt="shape" />
-                  <img className="shape-1" src={ServicesShape1} alt="shape" />
-                  <FaWallet />
-                </div>
-                <div className="services-content mt-30">
-                  <h4 className="services-title">
-                    <Link to="/">Cost Effectiveness</Link>
-                  </h4>
-                  <p className="text">
-                    Entering any country / corridor with very low operating
-                    capital (no pre-funding)
-                  </p>
-                </div>
+            <div
+              className="single-services wow fadeIn text-center mt-30"
+              data-wow-duration="1s"
+              data-wow-delay=".2s"
+            >
+              <div className="services-icon">
+                <img className="shape" src={ServicesShapeBg} alt="shape" />
+                <img className="shape-1" src={ServicesShape1} alt="shape" />
+                <FaWallet />
               </div>
-            </ReactWOW>
+              <div className="services-content mt-30">
+                <h4 className="services-title">
+                  <Link to="/">Cost Effectiveness</Link>
+                </h4>
+                <p className="text">
+                  Entering any country / corridor with very low operating
+                  capital (no pre-funding)
+                </p>
+              </div>
+            </div>
           </Col>
         </Row>
         <Row className="justify-content-center">

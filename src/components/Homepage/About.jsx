@@ -1,19 +1,21 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import { Link } from "gatsby"
-import ReactWOW from "react-wow"
 import AboutShape1 from "../../images/about-shape-1.svg"
 import AboutImg1 from "../../images/about1.svg"
 
 const About = () => {
   return (
     <>
-    <section id="about" className="about-area pt-70">
-      <Container>
-        <Row>
-          <Col lg={6}>
-            <ReactWOW animation="fadeInLeftBig" duration="1s" delay=".5s">
-              <div className="about-content mt-50">
+      <section id="about" className="about-area pt-70">
+        <Container>
+          <Row>
+            <Col lg={6}>
+              <div
+                className="about-content mt-50 wow fadeInLeftBig"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
                 <div className="section-title">
                   <div className="line"></div>
                   <h3 className="title">Technology Integration</h3>
@@ -28,22 +30,22 @@ const About = () => {
                   Try it
                 </Link>
               </div>
-            </ReactWOW>
-          </Col>
-          <Col lg={6}>
-            <ReactWOW animation="fadeInRightBig" duration="1s" delay=".5s">
-              <div className="about-image text-center mt-50">
+            </Col>
+            <Col lg={6}>
+              <div
+                className="about-image text-center mt-50 fadeInRightBig wow"
+                data-wow-duration="1s"
+                data-wow-delay=".5s"
+              >
                 <img src={AboutImg1} alt="shape" />
               </div>
-            </ReactWOW>
-          </Col>
-        </Row>
-      </Container>
-      <div className="about-shape-1">
-        <img src={AboutShape1} alt="shape" />
-      </div>
-    </section>
-    
+            </Col>
+          </Row>
+        </Container>
+        <div className="about-shape-1">
+          <img src={AboutShape1} alt="shape" />
+        </div>
+      </section>
     </>
   )
 }
