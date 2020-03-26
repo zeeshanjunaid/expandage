@@ -6,7 +6,6 @@
  */
 
 import React, { Component } from "react"
-import PropTypes from "prop-types"
 
 import Header from "./Header"
 import Footer from "./Footer"
@@ -14,7 +13,7 @@ import WOW from "wow.js"
 
 class Layout extends Component {
   constructor(props) {
-    super()
+    super(props)
   }
   componentDidMount() {
     new WOW().init()
@@ -29,10 +28,6 @@ class Layout extends Component {
       </>
     )
   }
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
