@@ -12,9 +12,7 @@ import Footer from "./Footer"
 import WOW from "wow.js"
 
 class Layout extends Component {
-  constructor(props) {
-    super(props)
-  }
+
   componentDidMount() {
     new WOW().init()
   }
