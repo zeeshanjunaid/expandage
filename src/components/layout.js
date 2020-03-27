@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Header from "./Header"
+// import Header from "./Header"
 import Footer from "./Footer"
 // import WOW from "wow.js"
 
@@ -19,7 +19,7 @@ class Layout extends React.Component {
     const { children } = this.props
     return (
       <main>
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </main>
