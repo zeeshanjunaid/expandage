@@ -8,14 +8,14 @@ const Header = () => {
   return (
     <header className="header-area">
       <Menu />
-      <div
+      {/* <div
         id="home"
         className="header-hero bg_cover"
         style={{ backgroundImage: `url(${bannerBG})` }}
       >
         <Hero />
         <ParticlesHeader />
-      </div>
+      </div> */}
     </header>
   )
 }
