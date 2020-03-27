@@ -6,13 +6,24 @@
  */
 
 import React from "react"
-
 import PropTypes from "prop-types"
+import Header from "./Header"
+import Footer from "./Footer"
+import WOW from "wow.js"
 
 class Layout extends React.Component {
+  componentDidMount() {
+    new WOW().init()
+  }
   render() {
     const { children } = this.props
-    return <>testing again</>
+    return (
+      <main>
+        <Header />
+        {children}
+        <Footer />
+      </main>
+    )
   }
 }
 
