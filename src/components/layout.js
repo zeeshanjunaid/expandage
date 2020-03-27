@@ -7,14 +7,9 @@
 
 import React from "react"
 
-import Footer from "./Footer"
 import PropTypes from "prop-types"
-import WOW from "wow.js"
 
 class Layout extends React.Component {
-  componentDidMount() {
-    new WOW().init()
-  }
   render() {
     const { children } = this.props
     return <>testing again</>
