@@ -5,7 +5,7 @@ import React from "react"
 // import bannerBG from "../images/banner-bg.svg"
 
 const Header = () => {
-  return <>header here</>
+  return <h2>header here</h2>
 }
 
 export default Header
