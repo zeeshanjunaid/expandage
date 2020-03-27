@@ -10,11 +10,12 @@ import PropTypes from "prop-types"
 
 import Footer from "./Footer"
 // import Header from "./Header"
-import WOW from "wow.js"
+import WOW from "wowjs"
 
 class Layout extends Component {
   componentDidMount() {
-    new WOW().init()
+    const WOW = new WOW().init()
+    WOW.init()
   }
   render() {
     const { children } = this.props
