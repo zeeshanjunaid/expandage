@@ -8,14 +8,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import WOW from "wow.js"
+
+
+import Footer from "./Footer"
 
 class Layout extends React.Component {
-
+  componentDidMount() {
+    new WOW().init()
+  }
   render() {
     const { children } = this.props
     return (
       <>
-        hello
+ 
+        <main>{children}</main>
+        <Footer />
       </>
     )
   }
