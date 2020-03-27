@@ -1,13 +1,13 @@
 import React from "react"
-import ParticlesHeader from "./particles/ParticlesHeader"
-import Menu from "./Menu"
-import Hero from "./Homepage/Hero"
-import bannerBG from "../images/banner-bg.svg"
+// import ParticlesHeader from "./particles/ParticlesHeader"
+// import Menu from "./Menu"
+// import Hero from "./Homepage/Hero"
+// import bannerBG from "../images/banner-bg.svg"
 
 const Header = () => {
   return (
     <header className="header-area">
-      {/* <Menu /> */}
+      {/* <Menu />
       <div
         id="home"
         className="header-hero bg_cover"
@@ -15,7 +15,8 @@ const Header = () => {
       >
         <Hero />
         <ParticlesHeader />
-      </div>
+      </div> */}
+      header
     </header>
   )
 }
