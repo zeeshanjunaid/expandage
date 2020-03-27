@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 
 import WOW from "wow.js"
 
-
+import Header from "./Header"
 import Footer from "./Footer"
 
 class Layout extends React.Component {
@@ -21,7 +21,7 @@ class Layout extends React.Component {
     const { children } = this.props
     return (
       <>
- 
+        <Header />
         <main>{children}</main>
         <Footer />
       </>
