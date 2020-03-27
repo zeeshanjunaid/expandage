@@ -7,20 +7,24 @@
 
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import WOW from "wow.js/dist/wow.js"
+// import WOW from "wow.js"
 import Footer from "./Footer"
-// import Header from "./Header"
+import Header from "./Header"
 
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../styles/default.css"
+import "../styles/animate.css"
+import "../styles/style.css"
 
 class Layout extends Component {
-  componentDidMount() {
-    new WOW().init()
-  }
+  // componentDidMount() {
+  //   new WOW().init()
+  // }
   render() {
     const { children } = this.props
     return (
       <main>
-        {/* <Header /> */}
+        <Header />
         {children}
         <Footer />
       </main>
