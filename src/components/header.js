@@ -5,7 +5,19 @@ import Hero from "./Homepage/Hero"
 import bannerBG from "../images/banner-bg.svg"
 
 const Header = () => {
-  return <header className="header-area">header here</header>
+  return (
+    <div className="header-area">
+      <Menu />
+      <div
+        id="home"
+        className="header-hero bg_cover"
+        style={{ backgroundImage: `url(${bannerBG})` }}
+      >
+        <Hero />
+        <ParticlesHeader />
+      </div>
+    </div>
+  )
 }
 
 export default Header
