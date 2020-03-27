@@ -6,7 +6,7 @@ import bannerBG from "../images/banner-bg.svg"
 
 const Header = () => {
   return (
-    <div className="header-area">
+    <header className="header-area">
       <Menu />
       <div
         id="home"
@@ -16,7 +16,7 @@ const Header = () => {
         <Hero />
         <ParticlesHeader />
       </div>
-    </div>
+    </header>
   )
 }
 
