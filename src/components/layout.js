@@ -8,10 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import WOW from "wow.js"
-
 import Header from "./Header"
 import Footer from "./Footer"
+
+import WOW from "wow.js"
+
+
 
 class Layout extends React.Component {
   componentDidMount() {
