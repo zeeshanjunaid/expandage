@@ -17,12 +17,7 @@ class Layout extends React.Component {
   }
   render() {
     const { children } = this.props
-    return (
-      <>
-        <main>{children}</main>
-        <Footer />
-      </>
-    )
+    return <>testing again</>
   }
 }
 
