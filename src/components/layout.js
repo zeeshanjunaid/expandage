@@ -5,31 +5,26 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { Component } from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
-// import WOW from "wow.js"
-import Footer from "./Footer"
+
 import Header from "./Header"
+import Footer from "./Footer"
 
-import "bootstrap/dist/css/bootstrap.min.css"
-import "../styles/default.css"
-import "../styles/animate.css"
-import "../styles/style.css"
+const isServer = typeof window === "undefined"
+const WOW = !isServer ? require("wow.js") : null
 
-class Layout extends Component {
-  // componentDidMount() {
-  //   new WOW().init()
-  // }
-  render() {
-    const { children } = this.props
-    return (
-      <main>
-        <Header />
-        {children}
-        <Footer />
-      </main>
-    )
-  }
+const Layout = ({ children }) => {
+  useEffect(() => {
+    new WOW().init()
+  }, [])
+  return (
+    <main>
+      <Header />
+      {children}
+      <Footer />
+    </main>
+  )
 }
 
 Layout.propTypes = {
