@@ -2,7 +2,7 @@ import React from "react"
 import Particles from "react-particles-js"
 const ParticlesFooter = () => {
   return (
-    <div id="particles-2">
+    <div id="particles-2" className="particles">
       <Particles
         params={{
           particles: {

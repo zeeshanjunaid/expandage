@@ -14,6 +14,9 @@ import {
 } from "reactstrap"
 import { FaAngleUp } from "react-icons/fa"
 
+import logoDark from "../images/logo-dark.svg"
+import logoLight from "../images/logo-light.svg"
+
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolling, setScrolling] = useState(false)
@@ -39,7 +42,7 @@ const Menu = () => {
             <Col lg={12}>
               <Navbar expand="lg">
                 <NavbarBrand className="logo" tag={Link} to={"/"}>
-                  expandage
+                  <img alt="logo" src={scrolling ? logoDark : logoLight} className={`${scrolling ? "logo-dark" : "logo-light"}`} />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse className="sub-menu-bar" isOpen={isOpen} navbar>
