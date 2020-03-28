@@ -25,8 +25,12 @@ const Footer = () => {
             </Col>
             <Col lg={6}>
               <div className="subscribe-form mt-50">
-                <Form name="contact" method="POST" data-netlify="true">
-                  <Input type="email" placeholder="Enter email"></Input>
+                <Form name="subscribers" method="POST" data-netlify="true">
+                  <Input
+                    name="email"
+                    type="email"
+                    placeholder="Enter email"
+                  ></Input>
                   <Button className="main-btn">Subscribe</Button>
                 </Form>
               </div>
