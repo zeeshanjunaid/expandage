@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import logoLight from "../images/logo-light.svg"
 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"
+import Subscribers from "./Subscribers"
 
 const Footer = () => {
   return (
@@ -24,16 +25,7 @@ const Footer = () => {
               </div>
             </Col>
             <Col lg={6}>
-              <div className="subscribe-form mt-50">
-                <Form name="subscribers" method="POST" data-netlify="true">
-                  <Input
-                    name="email"
-                    type="email"
-                    placeholder="Enter email"
-                  ></Input>
-                  <Button className="main-btn">Subscribe</Button>
-                </Form>
-              </div>
+              <Subscribers />
             </Col>
           </Row>
         </div>
