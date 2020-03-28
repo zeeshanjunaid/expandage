@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaWallet } from "react-icons/fa"
+import { FaWallet, FaRecycle, FaHandsHelping } from "react-icons/fa"
 import { Container, Row, Col } from "reactstrap"
 
 import ServicesShapeBg from "../../images/services-shape.svg"
 import ServicesShape1 from "../../images/services-shape-1.svg"
+import ServicesShape2 from "../../images/services-shape-2.svg"
+import ServicesShape3 from "../../images/services-shape-3.svg"
 
 const Services = () => {
   return (
@@ -34,15 +36,15 @@ const Services = () => {
               <div className="services-icon">
                 <img className="shape" src={ServicesShapeBg} alt="shape" />
                 <img className="shape-1" src={ServicesShape1} alt="shape" />
-                <FaWallet />
+                <FaRecycle />
               </div>
               <div className="services-content mt-30">
                 <h4 className="services-title">
-                  <Link to="/">Cost Effectiveness</Link>
+                  <Link to="/">Automated Systems Communications</Link>
                 </h4>
                 <p className="text">
-                  Entering any country / corridor with very low operating
-                  capital (no pre-funding)
+                  Automate your onboarding with our BSA-compliant service
+                  available.
                 </p>
               </div>
             </div>
@@ -55,16 +57,16 @@ const Services = () => {
             >
               <div className="services-icon">
                 <img className="shape" src={ServicesShapeBg} alt="shape" />
-                <img className="shape-1" src={ServicesShape1} alt="shape" />
-                <FaWallet />
+                <img className="shape-1" src={ServicesShape2} alt="shape" />
+                <FaHandsHelping />
               </div>
               <div className="services-content mt-30">
                 <h4 className="services-title">
-                  <Link to="/">Cost Effectiveness</Link>
+                  <Link to="/">Sign ups {"&"} KYC</Link>
                 </h4>
                 <p className="text">
-                  Entering any country / corridor with very low operating
-                  capital (no pre-funding)
+                  We are the industry’s leading provider of escrow services for
+                  technology-driven securities offerings.
                 </p>
               </div>
             </div>
@@ -77,12 +79,12 @@ const Services = () => {
             >
               <div className="services-icon">
                 <img className="shape" src={ServicesShapeBg} alt="shape" />
-                <img className="shape-1" src={ServicesShape1} alt="shape" />
+                <img className="shape-1" src={ServicesShape3} alt="shape" />
                 <FaWallet />
               </div>
               <div className="services-content mt-30">
                 <h4 className="services-title">
-                  <Link to="/">Cost Effectiveness</Link>
+                  <Link to="/">Settlement {"&"} Exchanges</Link>
                 </h4>
                 <p className="text">
                   Entering any country / corridor with very low operating

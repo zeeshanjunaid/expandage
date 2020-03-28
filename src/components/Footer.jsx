@@ -2,6 +2,8 @@ import React from "react"
 import { Container, Row, Col, Button, Form, Input } from "reactstrap"
 import ParticlesFooter from "../components/particles/ParticlesFooter"
 import { Link } from "gatsby"
+import logoLight from "../images/logo-light.svg"
+
 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"
 
@@ -41,7 +43,7 @@ const Footer = () => {
                 data-wow-delay=".2s"
               >
                 <Link to="/" className="logo">
-                  Expandage
+                  <img src={logoLight} alt="Logo Footer" />
                 </Link>
                 <p className="text">
                   Lorem ipsum dolor sit amet consetetur sadipscing elitr,
