@@ -4,7 +4,6 @@ import ParticlesFooter from "../components/particles/ParticlesFooter"
 import { Link } from "gatsby"
 import logoLight from "../images/logo-light.svg"
 
-
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"
 
 const Footer = () => {
@@ -26,8 +25,8 @@ const Footer = () => {
             </Col>
             <Col lg={6}>
               <div className="subscribe-form mt-50">
-                <Form>
-                  <Input type="text" placeholder="Enter email"></Input>
+                <Form name="contact" method="POST" data-netlify="true">
+                  <Input type="email" placeholder="Enter email"></Input>
                   <Button className="main-btn">Subscribe</Button>
                 </Form>
               </div>
