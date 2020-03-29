@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, Button, Form, Input } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import ParticlesFooter from "../components/particles/ParticlesFooter"
 import { Link } from "gatsby"
 import logoLight from "../images/logo-light.svg"

@@ -4,10 +4,12 @@ import SEO from "../components/seo"
 import Services from "../components/Homepage/Services"
 import About from "../components/Homepage/About"
 import Testimonials from "../components/Homepage/Testimonials"
+import Hero from "../components/Homepage/Hero"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Hero />
     <Services />
     <About />
     <Testimonials />

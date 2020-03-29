@@ -42,7 +42,11 @@ const Menu = () => {
             <Col lg={12}>
               <Navbar expand="lg">
                 <NavbarBrand className="logo" tag={Link} to={"/"}>
-                  <img alt="logo" src={scrolling ? logoDark : logoLight} className={`${scrolling ? "logo-dark" : "logo-light"}`} />
+                  <img
+                    alt="logo"
+                    src={scrolling ? logoDark : logoLight}
+                    className={`${scrolling ? "logo-dark" : "logo-light"}`}
+                  />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse className="sub-menu-bar" isOpen={isOpen} navbar>
@@ -62,12 +66,14 @@ const Menu = () => {
                       </NavLink>
                     </NavItem>
                     <NavItem className="active">
-                      <NavLink className="page-scroll" href="#">
-                        Integrations
-                      </NavLink>
+                      <NavLink className="page-scroll">Integrations</NavLink>
                     </NavItem>
                     <NavItem className="active">
-                      <NavLink className="page-scroll" href="#">
+                      <NavLink
+                        tag={Link}
+                        className="page-scroll"
+                        to={"/contact"}
+                      >
                         Contact
                       </NavLink>
                     </NavItem>

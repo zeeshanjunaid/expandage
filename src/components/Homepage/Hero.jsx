@@ -3,6 +3,8 @@ import { Container, Row, Col } from "reactstrap"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import ParticlesHeader from "../particles/ParticlesHeader"
+import bannerBG from "../../images/banner-bg.svg"
 
 const HeroImg = () => {
   const data = useStaticQuery(graphql`
@@ -22,49 +24,57 @@ const HeroImg = () => {
 
 const Hero = () => {
   return (
-    <Container>
-      <Row className="justify-content-center">
-        <Col lg={8}>
-          <div className="header-hero-content text-center">
-            <h2
-              className="header-title wow fadeInUp"
-              data-wow-duration="1.3s"
-              data-wow-delay=".5s"
-            >
-              INTEGRATE. STREAMLINE.
-            </h2>
+    <div
+      id="home"
+      className="header-hero bg_cover"
+      style={{ backgroundImage: `url(${bannerBG})` }}
+    >
+      <Container>
+        <Row className="justify-content-center">
+          <Col lg={8}>
+            <div className="header-hero-content text-center">
+              <h2
+                className="header-title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay=".5s"
+              >
+                INTEGRATE. STREAMLINE.
+              </h2>
 
-            <h3
-              className="header-sub-title wow fadeInUp"
-              data-wow-duration="1.3s"
-              data-wow-delay=".2s"
-            >
-              We take care of technology so you can take care of your business.
-            </h3>
+              <h3
+                className="header-sub-title wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay=".2s"
+              >
+                We take care of technology so you can take care of your
+                business.
+              </h3>
 
-            <Link
-              to="/"
-              className="header-btn wow fadeInUp"
+              <Link
+                to="/"
+                className="header-btn wow fadeInUp"
+                data-wow-duration="1.3s"
+                data-wow-delay="1.1s"
+              >
+                Start building
+              </Link>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={12}>
+            <div
+              className="header-hero-image text-center wow fadeIn"
               data-wow-duration="1.3s"
-              data-wow-delay="1.1s"
+              data-wow-delay=".4s"
             >
-              Start building
-            </Link>
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={12}>
-          <div
-            className="header-hero-image text-center wow fadeIn"
-            data-wow-duration="1.3s"
-            data-wow-delay=".4s"
-          >
-            <HeroImg />
-          </div>
-        </Col>
-      </Row>
-    </Container>
+              <HeroImg />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <ParticlesHeader />
+    </div>
   )
 }
 
