@@ -57,11 +57,7 @@ const Menu = () => {
                       </NavLink>
                     </NavItem>
                     <NavItem className="active">
-                      <NavLink
-                        tag={Link}
-                        className="page-scroll"
-                        to={"/page-2"}
-                      >
+                      <NavLink tag={Link} className="page-scroll" to={"/about"}>
                         About
                       </NavLink>
                     </NavItem>

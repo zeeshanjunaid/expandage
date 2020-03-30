@@ -1237,10 +1237,17 @@ p {
   position: relative;
   padding-bottom: 30px;
 }
-.video-content .dots {
+.dots {
   position: absolute;
-  left: -30px;
-  bottom: 0;
+  right: -30px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .dots {
+    left: 0;
+  }
 }
 
 .video-wrapper {
@@ -1990,4 +1997,33 @@ html {
   .contact-box {
     text-align: center;
   }
+}
+
+.bg_cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.about-advantages h3 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.about-advantages .line {
+  height: 5px;
+  width: 80px;
+  background: #4e2894;
+  margin-top: 10px;
+}
+.about-advantages ul {
+  margin-top: 30px;
+}
+.about-advantages ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.about-advantages ul li svg {
+  margin-right: 8px;
+  margin-top: -5px;
+  color: #4e2894;
 }

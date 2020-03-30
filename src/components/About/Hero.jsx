@@ -5,7 +5,7 @@ import HeaderBg from "../../images/header-bg.png"
 const Hero = () => {
   return (
     <div
-      id="contact"
+      id="about"
       className="header-hero bg_cover"
       style={{
         backgroundImage: `linear-gradient(to bottom right, rgba(92,39,162, .8), rgba(55, 41, 125, .8)), url(${HeaderBg})`,
@@ -20,7 +20,7 @@ const Hero = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay=".5s"
               >
-                GET IN TOUCH
+                ABOUT US
               </h2>
 
               <h3
@@ -28,8 +28,8 @@ const Hero = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay=".2s"
               >
-                We are passionate about helping people build businesses, protect
-                assets and stay in compliance
+                Expandage is the technology-driven financial institution that
+                provides open banking solutions for FinTech innovators..
               </h3>
             </div>
           </Col>
