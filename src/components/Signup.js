@@ -63,7 +63,6 @@ class Signup extends Component {
           company: "",
           advert: "",
           message: "",
-          services: "",
           error: false,
         })
       )
@@ -76,7 +75,6 @@ class Signup extends Component {
           company: "",
           advert: "",
           message: "",
-          services: "",
           success: false,
         })
       )
