@@ -223,7 +223,7 @@ class Signup extends Component {
                           type="checkbox"
                           checked={service.isChecked}
                           value={service.value}
-                          name="service-wanted"
+                          name={service.value}
                         />{" "}
                         {service.value}
                       </Label>
