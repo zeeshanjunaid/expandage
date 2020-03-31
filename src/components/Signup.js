@@ -31,6 +31,19 @@ class Signup extends Component {
       services: "",
       success: false,
       error: false,
+      services: [
+        {
+          id: 1,
+          value: "Automated Systems Communications",
+          isChecked: false,
+        },
+        { id: 2, value: "Sign ups & KYC S", isChecked: false },
+        {
+          id: 3,
+          value: "Settlement & Exchanges",
+          isChecked: false,
+        },
+      ],
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -72,7 +85,14 @@ class Signup extends Component {
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
-
+  handleCheckBox = event => {
+    let services = this.state.services
+    services.forEach(service => {
+      if (service.value === event.target.value)
+        service.isChecked = event.target.checked
+    })
+    this.setState({ services: services })
+  }
   render() {
     const {
       name,
@@ -81,9 +101,9 @@ class Signup extends Component {
       company,
       advert,
       message,
-      services,
       error,
       success,
+      services,
     } = this.state
     return (
       <section
@@ -177,7 +197,7 @@ class Signup extends Component {
                 <Col lg={4} className="signup-services">
                   <h3>Interested Services</h3>
                   <FormGroup check className="signup-services-checkbox">
-                    <Label check>
+                    {/* <Label check>
                       <Input type="checkbox" /> Automated Systems Communications
                     </Label>
                     <br />
@@ -187,7 +207,27 @@ class Signup extends Component {
                     <br />
                     <Label check>
                       <Input type="checkbox" /> Settlement {"&"} Exchanges
-                    </Label>
+                    </Label> */}
+                    {/* <input
+                      key={services.id}
+                      onClick={this.handleCheckBox}
+                      type="checkbox"
+                      checked={services.isChecked}
+                      value={services.value}
+                    />{" "}
+                    {services.value} */}
+                    {services.map(service => (
+                      <Label check key={service.id}>
+                        <input
+                          onClick={this.handleCheckBox}
+                          type="checkbox"
+                          checked={service.isChecked}
+                          value={service.value}
+                          name="service-wanted"
+                        />{" "}
+                        {service.value}
+                      </Label>
+                    ))}
                   </FormGroup>
                 </Col>
                 <Col lg={8}>

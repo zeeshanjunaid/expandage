@@ -21,6 +21,7 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.9.0",
     "react-particles-js": "^2.7.1",
+    "react-select-plus": "^1.0.0-rc.3.patch12",
     "react-slick": "^0.25.2",
     "reactstrap": "^8.4.1",
     "slick-carousel": "^1.8.1",
