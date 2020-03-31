@@ -2140,3 +2140,34 @@ html {
 .grid-box:not(:first-child):hover {
   transform: scale(1.05);
 }
+
+.signupForm {
+  box-shadow: 0px 0px 12px 0px rgba(50, 77, 215, 0.14);
+  padding: 4rem 4rem 0 4rem;
+  position: relative;
+}
+.signupForm textarea {
+  min-height: 115px;
+}
+.signup_img {
+  width: 80px;
+  position: absolute;
+  border-radius: 50%;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.signup-btn {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.signup-services h3 {
+  font-size: 24px;
+  color: #4e2894;
+  margin-bottom: 20px;
+  letter-spacing: .5px;
+}
+.signup-services-checkbox .form-check-label:not(:last-child) {
+  margin-bottom: 10px;
+}

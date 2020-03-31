@@ -5,6 +5,7 @@ import Services from "../components/Homepage/Services"
 import About from "../components/Homepage/About"
 import Testimonials from "../components/Homepage/Testimonials"
 import Hero from "../components/Homepage/Hero"
+import Signup from "../components/Signup"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Services />
     <About />
     <Testimonials />
+    <Signup />
   </Layout>
 )
 
