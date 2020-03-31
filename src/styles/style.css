@@ -2027,3 +2027,116 @@ html {
   margin-top: -5px;
   color: #4e2894;
 }
+
+.curve-bg {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.service-title {
+  font-size: 28px;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-box {
+  box-shadow: 0px 0px 12px 0px rgba(50, 77, 215, 0.14);
+  padding: 2rem 1.25rem;
+  flex: 1 1 auto;
+  min-height: 1px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  transition: all 0.3s;
+}
+.service-box:hover {
+  transform: scale(1.05);
+  z-index: 8;
+}
+@media (min-width: 992px) {
+  .service-box {
+    height: 200px;
+  }
+}
+.service-box-left {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+.service-box-left img {
+  width: 100%;
+  max-width: 80px;
+  margin: 0 auto;
+}
+.service-box-right {
+  margin-left: 1rem;
+  width: calc(80% - 1rem);
+}
+.service-box-right h2 {
+  font-size: 22px;
+  color: #37297d;
+}
+.service-box-right p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.section-kf {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(92, 39, 162, 1),
+    rgba(55, 41, 125, 1)
+  );
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+.grid-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+@media (max-width: 992px) {
+  .grid-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .grid-boxes {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-box {
+  box-shadow: 0px 0px 12px 0px rgba(50, 77, 215, 0.14);
+  padding: 2rem;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+.grid-box:first-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.grid-box:first-child h2 {
+  text-transform: uppercase;
+  line-height: 1.6;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.grid-box h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #4e2894;
+}
+.grid-box p {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.grid-box:not(:first-child):hover {
+  transform: scale(1.05);
+}

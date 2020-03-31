@@ -5,7 +5,7 @@ import HeaderBg from "../../images/header-bg.png"
 const Hero = () => {
   return (
     <div
-      id="contact"
+      id="integrations"
       className="header-hero bg_cover curve-bg"
       style={{
         backgroundImage: `linear-gradient(to bottom right, rgba(92,39,162, .8), rgba(55, 41, 125, .8)), url(${HeaderBg})`,
@@ -20,7 +20,7 @@ const Hero = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay=".5s"
               >
-                GET IN TOUCH
+                INTEGRATIONS
               </h2>
 
               <h3
@@ -28,8 +28,7 @@ const Hero = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay=".2s"
               >
-                We are passionate about helping people build businesses, protect
-                assets and stay in compliance
+                All the integrations that we provide
               </h3>
             </div>
           </Col>

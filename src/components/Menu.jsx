@@ -62,7 +62,13 @@ const Menu = () => {
                       </NavLink>
                     </NavItem>
                     <NavItem className="active">
-                      <NavLink className="page-scroll">Integrations</NavLink>
+                      <NavLink
+                        tag={Link}
+                        className="page-scroll"
+                        to="/integrations"
+                      >
+                        Integrations
+                      </NavLink>
                     </NavItem>
                     <NavItem className="active">
                       <NavLink

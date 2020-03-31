@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="about"
-      className="header-hero bg_cover"
+      className="header-hero bg_cover curve-bg"
       style={{
         backgroundImage: `linear-gradient(to bottom right, rgba(92,39,162, .8), rgba(55, 41, 125, .8)), url(${HeaderBg})`,
       }}
