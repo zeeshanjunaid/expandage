@@ -31,19 +31,19 @@ class Signup extends Component {
       services: "",
       success: false,
       error: false,
-      services: [
-        {
-          id: 1,
-          value: "Automated Systems Communications",
-          isChecked: false,
-        },
-        { id: 2, value: "Sign ups & KYC S", isChecked: false },
-        {
-          id: 3,
-          value: "Settlement & Exchanges",
-          isChecked: false,
-        },
-      ],
+      // services: [
+      //   {
+      //     id: 1,
+      //     value: "Automated Systems Communications",
+      //     isChecked: false,
+      //   },
+      //   { id: 2, value: "Sign ups & KYC S", isChecked: false },
+      //   {
+      //     id: 3,
+      //     value: "Settlement & Exchanges",
+      //     isChecked: false,
+      //   },
+      // ],
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -83,14 +83,14 @@ class Signup extends Component {
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
-  handleCheckBox = event => {
-    let services = this.state.services
-    services.forEach(service => {
-      if (service.value === event.target.value)
-        service.isChecked = event.target.checked
-    })
-    this.setState({ services: services })
-  }
+  // handleCheckBox = event => {
+  //   let services = this.state.services
+  //   services.forEach(service => {
+  //     if (service.value === event.target.value)
+  //       service.isChecked = event.target.checked
+  //   })
+  //   this.setState({ services: services })
+  // }
   render() {
     const {
       name,
@@ -101,7 +101,6 @@ class Signup extends Component {
       message,
       error,
       success,
-      services,
     } = this.state
     return (
       <section
@@ -192,7 +191,7 @@ class Signup extends Component {
                 </Col>
               </Row>
               <Row className="mt-10">
-                <Col lg={4} className="signup-services">
+                {/* <Col lg={4} className="signup-services">
                   <h3>Interested Services</h3>
                   <FormGroup check className="signup-services-checkbox">
                     {services.map(service => (
@@ -208,8 +207,8 @@ class Signup extends Component {
                       </Label>
                     ))}
                   </FormGroup>
-                </Col>
-                <Col lg={8}>
+                </Col> */}
+                <Col lg={12}>
                   <FormGroup>
                     <Label for="message">Write a Message</Label>
                     <Input

@@ -25,7 +25,7 @@ const HeroImg = () => {
 const Hero = () => {
   return (
     <div
-      id="home"
+      id="heroArea"
       className="header-hero bg_cover"
       style={{ backgroundImage: `url(${bannerBG})` }}
     >

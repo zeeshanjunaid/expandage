@@ -5,10 +5,10 @@ import HeaderBg from "../../images/header-bg.png"
 const Hero = () => {
   return (
     <div
-      id="about"
+      id="heroArea"
       className="header-hero bg_cover curve-bg"
       style={{
-        backgroundImage: `linear-gradient(to bottom right, rgba(92,39,162, .8), rgba(55, 41, 125, .8)), url(${HeaderBg})`,
+        backgroundImage: `linear-gradient(to bottom right, rgba(43,152,208, .8), rgba(43,152,208, .8)), url(${HeaderBg})`,
       }}
     >
       <Container>

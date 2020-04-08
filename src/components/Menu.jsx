@@ -13,6 +13,7 @@ import {
   NavLink,
 } from "reactstrap"
 import { FaAngleUp } from "react-icons/fa"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import logoDark from "../images/logo-dark.svg"
 import logoLight from "../images/logo-light.svg"
@@ -36,7 +37,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className={`navbar-area ${scrolling && "sticky"}`}>
+      <div id="header" className={`navbar-area ${scrolling && "sticky"}`}>
         <Container>
           <Row>
             <Col lg={12}>
@@ -82,9 +83,13 @@ const Menu = () => {
                   </Nav>
                 </Collapse>
                 <div className="navbar-btn d-none d-sm-inline-block">
-                  <Link className="main-btn" to="/">
+                  <button
+                    className="main-btn"
+                    to="/"
+                    onClick={() => scrollTo("#signupSection")}
+                  >
                     Sign Up
-                  </Link>
+                  </button>
                 </div>
               </Navbar>
             </Col>
@@ -93,9 +98,9 @@ const Menu = () => {
       </div>
 
       {scrolling && (
-        <a href="#" className="back-to-top">
+        <button onClick={() => scrollTo("#heroArea")} className="back-to-top">
           <FaAngleUp />
-        </a>
+        </button>
       )}
     </>
   )

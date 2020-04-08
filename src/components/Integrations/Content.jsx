@@ -1,11 +1,9 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
-import { Link } from "gatsby"
 
 import Automate from "../../images/automate.png"
 import SericeIcon1 from "../../images/service-icon-1.png"
 import SericeIcon2 from "../../images/service-icon-2.png"
-import { FaCheck } from "react-icons/fa"
 
 const keyFeatures = [
   {

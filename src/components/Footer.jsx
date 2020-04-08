@@ -4,7 +4,6 @@ import ParticlesFooter from "../components/particles/ParticlesFooter"
 import { Link } from "gatsby"
 import logoLight from "../images/logo-light.svg"
 
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"
 import Subscribers from "./Subscribers"
 
 const Footer = () => {
@@ -63,9 +62,6 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link to="/">Terms of Services</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Pricing</Link>
                     </li>
                   </ul>
                 </div>
