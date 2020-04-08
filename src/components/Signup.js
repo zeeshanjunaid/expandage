@@ -195,25 +195,6 @@ class Signup extends Component {
                 <Col lg={4} className="signup-services">
                   <h3>Interested Services</h3>
                   <FormGroup check className="signup-services-checkbox">
-                    {/* <Label check>
-                      <Input type="checkbox" /> Automated Systems Communications
-                    </Label>
-                    <br />
-                    <Label check>
-                      <Input type="checkbox" /> Sign ups {"&"} KYC S
-                    </Label>
-                    <br />
-                    <Label check>
-                      <Input type="checkbox" /> Settlement {"&"} Exchanges
-                    </Label> */}
-                    {/* <input
-                      key={services.id}
-                      onClick={this.handleCheckBox}
-                      type="checkbox"
-                      checked={services.isChecked}
-                      value={services.value}
-                    />{" "}
-                    {services.value} */}
                     {services.map(service => (
                       <Label check key={service.id}>
                         <input
@@ -222,7 +203,7 @@ class Signup extends Component {
                           checked={service.isChecked}
                           value={service.value}
                           name={service.value}
-                        />{" "}
+                        />
                         {service.value}
                       </Label>
                     ))}
@@ -246,7 +227,7 @@ class Signup extends Component {
               <Row className="justify-content-center">
                 <Col lg={3} style={{ textAlign: "center" }}>
                   <Button type="submit" className="main-btn signup-btn">
-                    Submit
+                    Sign Up
                   </Button>
                 </Col>
               </Row>

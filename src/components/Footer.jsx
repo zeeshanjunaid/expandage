@@ -45,28 +45,6 @@ const Footer = () => {
                   sederfs diam nonumy eirmod tempor invidunt ut labore et dolore
                   magna aliquyam.
                 </p>
-                <ul className="social">
-                  <li>
-                    <a rel="nofollow" target="_blank" href="facebook.com">
-                      <FaFacebook />
-                    </a>
-                  </li>
-                  <li>
-                    <a rel="nofollow" target="_blank" href="twitter.com">
-                      <FaTwitter />
-                    </a>
-                  </li>
-                  <li>
-                    <a rel="nofollow" target="_blank" href="instagram.com">
-                      <FaInstagram />
-                    </a>
-                  </li>
-                  <li>
-                    <a rel="nofollow" target="_blank" href="linkedin.com">
-                      <FaLinkedin />
-                    </a>
-                  </li>
-                </ul>
               </div>
             </Col>
             <Col lg={5} md={7} sm={7}>
@@ -82,12 +60,6 @@ const Footer = () => {
                   <ul className="link">
                     <li>
                       <Link to="/">Road Map</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Privacy Policy</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Refund Policy</Link>
                     </li>
                     <li>
                       <Link to="/">Terms of Services</Link>

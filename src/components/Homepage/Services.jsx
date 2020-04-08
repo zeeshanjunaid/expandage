@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaWallet, FaRecycle, FaHandsHelping } from "react-icons/fa"
+import { FaExchangeAlt, FaRecycle, FaHandsHelping } from "react-icons/fa"
 import { Container, Row, Col } from "reactstrap"
 
 import ServicesShapeBg from "../../images/services-shape.svg"
@@ -80,7 +80,7 @@ const Services = () => {
               <div className="services-icon">
                 <img className="shape" src={ServicesShapeBg} alt="shape" />
                 <img className="shape-1" src={ServicesShape3} alt="shape" />
-                <FaWallet />
+                <FaExchangeAlt />
               </div>
               <div className="services-content mt-30">
                 <h4 className="services-title">

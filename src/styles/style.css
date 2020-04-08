@@ -990,7 +990,7 @@ p {
   padding-top: 45px;
 }
 .header-hero-image img {
-  max-width: 650px;
+  max-width: 850px;
 }
 @media (max-width: 767px) {
   .header-hero-image img {
@@ -1959,7 +1959,7 @@ html {
 }
 
 .header-hero-image .gatsby-image-wrapper {
-  max-width: 650px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -2166,7 +2166,7 @@ html {
   font-size: 24px;
   color: #4e2894;
   margin-bottom: 20px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 .signup-services-checkbox .form-check-label:not(:last-child) {
   margin-bottom: 10px;
