@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `#5c27a2`,
+        color: `#53a5f8`,
         showSpinner: false,
       },
     },
@@ -29,8 +29,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#5C27A2`,
-        theme_color: `#5C27A2`,
+        background_color: `#53a5f8`,
+        theme_color: `#53a5f8`,
         display: `isometric-ui`,
         icon: `src/images/icon-expandage.svg`, // This path is relative to the root of the site.
       },
