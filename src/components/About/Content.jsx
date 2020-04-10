@@ -11,7 +11,7 @@ import { FaCheck } from "react-icons/fa"
 const AboutTop = () => {
   const data = useStaticQuery(graphql`
     query {
-      AboutTop: file(relativePath: { eq: "about-top.webp" }) {
+      AboutTop: file(relativePath: { eq: "aboutTopImg.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
