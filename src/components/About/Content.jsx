@@ -1,10 +1,28 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
-import AboutTop from "../../images/about-top.webp"
 import Dots from "../../images/dots.svg"
 import { FaCheck } from "react-icons/fa"
+
+
+const AboutTop = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      AboutTop: file(relativePath: { eq: "about-top.webp" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return <Img fluid={data.AboutTop.childImageSharp.fluid} />
+}
 
 const Content = () => {
   return (
@@ -40,7 +58,7 @@ const Content = () => {
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
-                <img src={AboutTop} alt="about" />
+                <AboutTop />
               </div>
               <img className="dots" src={Dots} alt="dots" />
             </Col>
