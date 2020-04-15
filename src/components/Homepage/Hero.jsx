@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ParticlesHeader from "../particles/ParticlesHeader"
 import bannerBG from "../../images/banner-bg.svg"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const HeroImg = () => {
   const data = useStaticQuery(graphql`
@@ -50,14 +51,14 @@ const Hero = () => {
                 business.
               </h3>
 
-              <Link
-                to="/"
+              <button
                 className="header-btn wow fadeInUp"
                 data-wow-duration="1.3s"
                 data-wow-delay="1.1s"
+                onClick={() => scrollTo("#signupSection")}
               >
                 Start building
-              </Link>
+              </button>
             </div>
           </Col>
         </Row>

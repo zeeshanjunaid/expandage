@@ -1935,6 +1935,7 @@ p {
 .header-btn,
 .header-btn:link,
 .header-btn:visited {
+  background-color: transparent;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
